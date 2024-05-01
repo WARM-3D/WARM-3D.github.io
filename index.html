@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+    <meta property="og:url" content="URL OF THE WEBSITE"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+
+
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>WA-RM3D: Weakly-Supervised Sim2Real Domain Adaptation for Roadside Monocular 3D Object Detection</title>
+    <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-4 publication-title">WARM-3D: Weakly-Supervised Sim2Real Domain Adaptation <br>
+                        for Roadside Monocular 3D Object Detection</h1>
+                    <div class="is-size-5 publication-authors">
+                            <span class="author-block"><a href="https://scholar.google.com/citations?user=FPYXLpQAAAAJ&hl=en"
+                                                          target="_blank">Xingcheng Zhou</a><sup>*</sup>,</span>
+                        <span class="author-block"><a href="https://de.linkedin.com/in/deyu-fu"
+                                                      target="_blank">Deyu Fu</a><sup>*</sup>,</span>
+                        <span class="author-block"><a href="https://walzimmer.github.io/website/" target="_blank">Walter Zimmer</a>,</span>
+                        <span class="author-block"><a href="https://scholar.google.com/citations?user=Bcohc-oAAAAJ&hl=zh-CN"
+                                                      target="_blank">Mingyu Liu</a>,</span><br>
+                        <span class="author-block"><a target="_blank">Venkatnarayanan Lakshminarasimhan</a>,</span>
+                        <span class="author-block"><a href="https://www.ce.cit.tum.de/air/people/leah-strand-msc/" target="_blank">Leah Strand</a>,</span>
+                        <span class="author-block"><a
+                                href="https://www.ce.cit.tum.de/air/people/prof-dr-ing-habil-alois-knoll"
+                                target="_blank">Alois C. Knoll</a></span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">Technical University of Munich</span>
+                        <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                                <!-- <span class="link-block">
+                              <a href="https://arxiv.org/pdf/2403.01316.pdf" target="_blank"
+                                 class="external-link button is-normal is-rounded is-dark">
+                                <span class="icon">
+                                <i class="fas fa-file-pdf"></i>
+                                </span>
+                                <span>Paper</span>
+                              </a>
+                            </span> -->
+
+                            <!-- Github link -->
+                            <span class="link-block">
+                                    <a href="https://github.com/ge25nab/WA-RM3D-repo" target="_blank"
+                                       class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Model</span>
+                                    </a>
+                                </span>
+
+
+                            <!-- Dataset link -->
+                            <span class="link-block">
+                                    <a href="https://innovation-mobility.com/en/project-providentia/a9-dataset/#anchor_release_4"
+                                       target="_blank" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fa fa-database"></i>
+                                        </span>
+                                        <span>Dataset</span>
+                                    </a>
+                                </span>
+
+ 
+                            <!-- Github link -->
+                            <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/00000"
+                                       target="_blank" class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Arxiv</span>
+                                    </a>
+                                </span>
+
+
+                            <!-- ArXiv abstract Link -->
+                            <!-- <span class="link-block">
+                          <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="ai ai-arxiv"></i>
+                          </span>
+                          <span>arXiv</span>
+                          </a>
+                        </span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container">
+            <!--            <h2 class="title is-3">Dataset Visualization</h2>-->
+            <div id="results-carousel" class="carousel results-carousel"> 
+
+            <div class="item item-img2">
+                    &nbsp;
+                    <img src="static/images/vis_result_a9.jpg" alt="infrastructure_sensors"/>
+                    <h2 class="subtitle has-text-centered">
+                        Visualization Comparision of WA-RM3D method on TUMTraf Intersection dataset.
+                    </h2>
+                </div>
+
+            <div class="item item-img1">
+                &nbsp;
+                <img src="static/images/snow_vis-snow_vis.jpg" alt="infrastructure_sensors"/>
+                <h2 class="subtitle has-text-centered">
+                    Visualizations of WA-RM3D on unseen samples in snow conditions, demonstrating robustness to out-of-distribution scenarios.
+                </h2>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Overview  -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns" style="text-align: center">
+
+
+            <div class="column is-max-desktop">
+
+
+                <h2 class="title is-3">Overview</h2>
+
+                <div class="container is-max-desktop">
+                    <img src="static/images/Frame_work.jpg" alt="infrastructure_sensors" />
+                    <!-- <img src="static/images/Frame_work.jpg" alt="infrastructure_sensors" style="width: auto; height: auto; max-width: none; max-height: none;"> -->
+
+                    <h2 class="subtitle has-text-justify">
+                        Overview of our WA-RM3D (Weakly-Supervised Domain Adaptation for Roadside Monocular <br> 3D Object Detection) Framework. WA-RM3D is a cross-domain transfer learning framework for roadside monocular 3D object detection leveraging mature off-the-shelf 2D object detectors as the guidance of weak-label supervision. 
+                    </h2>
+                    </div>
+
+
+                <div class="content">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End overview -->
+
+<section class="section hero">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Labeling 3D boxes for roadside perception is
+                        resource-intensive due to the scarcity of available roadside
+                        datasets. Exploring the use of cost-effective, large-scale synthetic
+                        datasets offers a viable solution to enhance the stability and
+                        robustness of roadside monocular 3D detection. In this study,
+                        we introduce WA-RM3D, a concise yet effective framework that
+                        leverages cheap and easy-to-obtain 2D labels from off-the-shelf
+                        2D Detector for weak supervision, aiding the Sim2Real domain
+                        transfer in monocular 3D detection. We also introduce the
+                        TUM-Traffic Synthetic Dataset, offering a diverse and extensive
+                        collection of high-quality 3D data to augment scarce real-
+                        world datasets. WA-RM3D significantly enhances performance
+                        on the TUM-Traf Intersection Dataset, both quantitatively and
+                        qualitatively, achieving a +9.33% increase 3D mAP over the
+                        baseline and reaching 39.17 3D mAP on the test set with
+                        additional pseudo 2D supervision. Moreover, WA-RM3D en-
+                        hances the ability of 3D detectors to recognize previously unseen
+                        samples across various real-world environments, highlighting its
+                        potential for practical applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sensor setup  -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns">
+            <div class="column is-centered has-text-centered">
+                <h2 class="title is-3">Visualization Results</h2>
+
+                <div class="item video1">
+                    &nbsp;
+                    
+                    <video poster="" autoplay controls muted loop height="100%">
+                        <source src="static/videos/snow_output.mp4" type="video/mp4">
+                    </video>
+                    <h2 class="subtitle has-text-justify">
+
+                    <p>Visualizations of WA-RM3D on unseen snow samples. <br>
+                        <strong>Left: WA-RM3D    Right: Baseline Model <strong> </p>
+                    </h2>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End sensor setup -->
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content has-text-centered">
+                    <p>
+                        The <strong>TUMTraf-Synthetic</strong> Dataset is licensed under <a
+                            href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA
+                        4.0</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+<!-- End of Statcounter Code -->
+
+</body>
+
+</html>
