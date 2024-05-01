@@ -56,7 +56,7 @@
                         for Roadside Monocular 3D Object Detection</h1>
                     <div class="is-size-5 publication-authors">
                             <span class="author-block"><a href="https://scholar.google.com/citations?user=FPYXLpQAAAAJ&hl=en"
-                                                          target="_blank">Xingcheng Zhou</a><sup>*</sup>,</span>
+                                                          target="_blank">Xingcheng Zhou</a><sup>†</sup><sup>*</sup>,</span>
                         <span class="author-block"><a href="https://de.linkedin.com/in/deyu-fu"
                                                       target="_blank">Deyu Fu</a><sup>*</sup>,</span>
                         <span class="author-block"><a href="https://walzimmer.github.io/website/" target="_blank">Walter Zimmer</a>,</span>
@@ -71,6 +71,8 @@
 
                     <div class="is-size-5 publication-authors">
                         <span class="author-block">Technical University of Munich</span>
+                        <span class="eql-cntrb"><small><br><sup>†</sup>Corresponding Author</small></span>
+
                         <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                     </div>
 
@@ -148,17 +150,17 @@
 
             <div class="item item-img2">
                     &nbsp;
-                    <img src="static/images/vis_result_a9.jpg" alt="infrastructure_sensors"/>
+                    <img src="static/images/a9_vis.jpg" alt="infrastructure_sensors"/>
                     <h2 class="subtitle has-text-centered">
-                        Visualization Comparision of WA-RM3D method on TUMTraf Intersection dataset.
+                        Visualization Comparision of WARM-3D method on TUMTraf Intersection dataset.
                     </h2>
                 </div>
 
             <div class="item item-img1">
                 &nbsp;
-                <img src="static/images/snow_vis-snow_vis.jpg" alt="infrastructure_sensors"/>
+                <img src="static/images/snow_vis_end.jpg" alt="infrastructure_sensors"/>
                 <h2 class="subtitle has-text-centered">
-                    Visualizations of WA-RM3D on unseen samples in snow conditions, demonstrating robustness to out-of-distribution scenarios.
+                    Visualizations of WARM-3D on unseen samples in snow conditions, demonstrating robustness to out-of-distribution scenarios.
                 </h2>
             </div>
 
@@ -183,7 +185,7 @@
                     <!-- <img src="static/images/Frame_work.jpg" alt="infrastructure_sensors" style="width: auto; height: auto; max-width: none; max-height: none;"> -->
 
                     <h2 class="subtitle has-text-justify">
-                        Overview of our WA-RM3D (Weakly-Supervised Domain Adaptation for Roadside Monocular <br> 3D Object Detection) Framework. WA-RM3D is a cross-domain transfer learning framework for roadside monocular 3D object detection leveraging mature off-the-shelf 2D object detectors as the guidance of weak-label supervision. 
+                        Overview of our WARM-3D (Weakly-Supervised Domain Adaptation for Roadside Monocular <br> 3D Object Detection) Framework. WARM-3D is a cross-domain transfer learning framework for roadside monocular 3D object detection leveraging mature off-the-shelf 2D object detectors as the guidance of weak-label supervision. 
                     </h2>
                     </div>
 
@@ -205,25 +207,27 @@
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Labeling 3D boxes for roadside perception is
-                        resource-intensive due to the scarcity of available roadside
+                        Existing roadside perception systems are limited
+                        by lacking large-scale, publicly available, high-quality 3D
                         datasets. Exploring the use of cost-effective, large-scale synthetic
-                        datasets offers a viable solution to enhance the stability and
-                        robustness of roadside monocular 3D detection. In this study,
-                        we introduce WA-RM3D, a concise yet effective framework that
-                        leverages cheap and easy-to-obtain 2D labels from off-the-shelf
-                        2D Detector for weak supervision, aiding the Sim2Real domain
-                        transfer in monocular 3D detection. We also introduce the
-                        TUM-Traffic Synthetic Dataset, offering a diverse and extensive
-                        collection of high-quality 3D data to augment scarce real-
-                        world datasets. WA-RM3D significantly enhances performance
-                        on the TUM-Traf Intersection Dataset, both quantitatively and
-                        qualitatively, achieving a +9.33% increase 3D mAP over the
-                        baseline and reaching 39.17 3D mAP on the test set with
-                        additional pseudo 2D supervision. Moreover, WA-RM3D en-
-                        hances the ability of 3D detectors to recognize previously unseen
-                        samples across various real-world environments, highlighting its
-                        potential for practical applications.
+                        datasets offers a viable solution to take this challenge and
+                        enhance the performance of roadside monocular 3D detection.
+                        In this study, we introduce the TUMTraf Synthetic Dataset,
+                        offering a diverse and extensive collection of high-quality
+                        3D data to augment scarce real-world datasets. Besides, we
+                        present WARM-3D, a concise yet effective framework to aid the
+                        Sim2Real domain transfer for roadside monocular 3D detection.
+                        Our method leverages cheap synthetic datasets and 2D labels
+                        from an off-the-shelf 2D detector for weak supervision. We
+                        show that WARM-3D significantly enhances performance on
+                        the TUMTraf Intersection Dataset, achieving a +9.33% increase
+                        in mAP3D over the baseline and reaching 39.17 mAP3D
+                        with only pseudo 2D supervision. With 2D GT as weak labels,
+                        WARM-3D even reaches 3D performance close to the Oracle
+                        baseline. Moreover, WARM-3D improves the ability of 3D
+                        detectors to recognize unseen samples across various real-
+                        world environments, highlighting its potential for practical
+                        applications.
                     </p>
                 </div>
             </div>
@@ -258,7 +262,105 @@
 </section>
 <!-- End sensor setup -->
 
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns">
+            <div class="column is-centered has-text-centered">
+                <h2 class="title is-3">Visualization Results</h2>
 
+                <div class="item video1">
+                    &nbsp;
+                    
+                    <video poster="" autoplay controls muted loop height="100%">
+                        <source src="static/videos/0_output.mp4" type="video/mp4">
+                    </video>
+                    <h2 class="subtitle has-text-justify">
+
+                    <p>Visualizations of WA-RM3D on unseen snow samples. <br>
+                        <strong>Left: WA-RM3D    Right: Baseline Model <strong> </p>
+                    </h2>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns">
+            <div class="column is-centered has-text-centered">
+                <h2 class="title is-3">Visualization Results</h2>
+
+                <div class="item video1">
+                    &nbsp;
+                    
+                    <video poster="" autoplay controls muted loop height="100%">
+                        <source src="static/videos/1_output.mp4" type="video/mp4">
+                    </video>
+                    <h2 class="subtitle has-text-justify">
+
+                    <p>Visualizations of WA-RM3D on unseen snow samples. <br>
+                        <strong>Left: WA-RM3D    Right: Baseline Model <strong> </p>
+                    </h2>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns">
+            <div class="column is-centered has-text-centered">
+                <h2 class="title is-3">Visualization Results</h2>
+
+                <div class="item video1">
+                    &nbsp;
+                    
+                    <video poster="" autoplay controls muted loop height="100%">
+                        <source src="static/videos/2_output.mp4" type="video/mp4">
+                    </video>
+                    <h2 class="subtitle has-text-justify">
+
+                    <p>Visualizations of WA-RM3D on unseen snow samples. <br>
+                        <strong>Left: WA-RM3D    Right: Baseline Model <strong> </p>
+                    </h2>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns">
+            <div class="column is-centered has-text-centered">
+                <h2 class="title is-3">Visualization Results</h2>
+
+                <div class="item video1">
+                    &nbsp;
+                    
+                    <video poster="" autoplay controls muted loop height="100%">
+                        <source src="static/videos/3_output.mp4" type="video/mp4">
+                    </video>
+                    <h2 class="subtitle has-text-justify">
+
+                    <p>Visualizations of WA-RM3D on unseen snow samples. <br>
+                        <strong>Left: WA-RM3D    Right: Baseline Model <strong> </p>
+                    </h2>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</section>
 
 <footer class="footer">
     <div class="container">
